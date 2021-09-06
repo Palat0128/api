@@ -67,7 +67,7 @@ function mhs() {
     text = "1902195908";
     break;
     default:
-    text = "Vui Lòng Nhập Mã HS chính xác";
+    text = "Vui Lòng Nhập Tên HS chính xác";
   }
   document.getElementById("inpuths").innerHTML = text;
 }
