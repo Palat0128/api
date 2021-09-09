@@ -3,7 +3,7 @@ function trolai() {
   window.history.back();
 }
 function QGNOBAN(){
-	let CountryNOTBAN = "Việt Nam";  // QUỐC GIA
+	let CountryNOTBAN = "Việt Nam (Vietnam), Vương Quốc Anh (United Kingdom), Nhật Bản (Japan)(Tạm), Ấn Độ (India)(Tạm) ";  // QUỐC GIA
 	document.getElementById("qgnotban").innerHTML =
 	CountryNOTBAN + " "; 
 }
