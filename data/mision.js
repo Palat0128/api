@@ -15,6 +15,7 @@ else {
 	x.innerHTML = "Geolocation không được hỗ trợ bởi trình duyệt này.";
 }
 }
+var x = document.getElementById("container");
 function showPosition(position) {
 	lat = position.coords.latitude;
 	lon = position.coords.longitude;
