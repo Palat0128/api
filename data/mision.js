@@ -49,4 +49,20 @@ function showError(error) {
 	break;
 }
 }
+function Tacvu1() {
+  var time = new Date().getHours();
+  var person = prompt("Nhập Tên Trước Khi Vào");
+  if (person != null) {
+    document.getElementById("go").innerHTML =
+    "Chào " + person + "! Chúc bạn 1 ngày tốt";
+  }
+   if (time < 10) {
+    greeting = "Chào buổi sáng";
+  } else if (time < 18) {
+    greeting = "Chúc 1 ngày vui vẻ";
+  } else {
+    greeting ="Chào buổi tối";    
+  }
+  document.getElementById("timego").innerHTML = greeting;
+}
 //Contact with Palat in Nguyenthanhhai12072008@gmail.com
