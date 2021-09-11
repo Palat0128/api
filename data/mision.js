@@ -65,4 +65,8 @@ function Tacvu1() {
   }
   document.getElementById("timego").innerHTML = greeting;
 }
+function phienbantd() {
+  var v = "Phiên Bản Trình Duyệt: " + navigator.appVersion;
+  document.getElementById("vertd").innerHTML = v;
+}
 //Contact with Palat in Nguyenthanhhai12072008@gmail.com
