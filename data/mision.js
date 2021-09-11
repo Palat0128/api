@@ -68,7 +68,9 @@ function Tacvu1() {
 function trinhduyet() {
   var v = "Phiên Bản Trình Duyệt: " + navigator.appVersion;
   var x = "Trình duyệt tên: " + navigator.appCodeName;
+  var n = "Nền tản: " + navigator.platform;
   document.getElementById("nametrinhduyet").innerHTML = x;
   document.getElementById("vertd").innerHTML = v;
+  document.getElementById("nentan").innerHTML = n;
 }
 //Contact with Palat in Nguyenthanhhai12072008@gmail.com
