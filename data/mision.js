@@ -67,7 +67,7 @@ function Tacvu1() {
 }
 function trinhduyet() {
   var v = "Phiên Bản Trình Duyệt: " + navigator.appVersion;
-  var x = "Trình duyệt tên: " + navigator.appName;
+  var x = "Trình duyệt tên: " + navigator.appCodeName;
   document.getElementById("nametrinhduyet").innerHTML = x;
   document.getElementById("vertd").innerHTML = v;
 }
