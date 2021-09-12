@@ -94,11 +94,11 @@ function getCookie(cname) {
   return "";
 }
 
-  let user = getCookie("username-part");
-  if (user != "") {
-    alert("Chào Mừng trở lại " + user);
+ let user = getCookie("username-part");
+ if (user != "") {
+    alert("Chào Mừng trở lại!, " + user);
   } else {
-     user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web:","");
+     user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web :","");
      if (user != "" && user != null) {
        setCookie("username-part", user, 40);
      }
