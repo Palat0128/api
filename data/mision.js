@@ -7,6 +7,7 @@ function QGNOBAN(){
 	document.getElementById("qgnotban").innerHTML =
 	CountryNOTBAN + " "; 
 }
+//Định Vị
 function getLocation() {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(showPosition, showError);
@@ -48,6 +49,7 @@ function showError(error) {
 	x.innerHTML = "Một lỗi xảy ra không rõ nguyên nhân."
 	break;
 }
+//Script thoại thời gian	
 }
 function Tacvu1() {
   var time = new Date().getHours();
@@ -71,6 +73,7 @@ function trinhduyet() {
   document.getElementById("vertd").innerHTML = v;
   document.getElementById("nentan").innerHTML = n;
 }
+//Save tên và chào mừng với tên của bạn trên bộ nhớ cookie web
 function setCookie(cname,cvalue,exdays) {
   const d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
