@@ -74,19 +74,19 @@ function trinhduyet() {
   document.getElementById("nentan").innerHTML = n;
 }
 //Save tên và chào mừng với tên của bạn trên bộ nhớ cookie web
-function setCookie(cname,cvalue,exdays) {
-  const d = new Date();
+function setupC(cname,cvalue,exdays) {
+  var d = new Date();
   d.setTime(d.getTime() + (exdays*24*60*60*1000));
-  let expires = "expires=" + d.toGMTString();
+  var expires = "expires=" + d.toGMTString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let i = 0; i < ca.length; i++) {
-    let c = ca[i];
+function getnameC(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i < ca.length; i++) {
+    var c = ca[i];
     while (c.charAt(0) == ' ') {
       c = c.substring(1);
     }
@@ -97,13 +97,13 @@ function getCookie(cname) {
   return "";
 }
 
- let user = getCookie("username-part");
+ var user = getnameC("username-part");
  if (user != "") {
     alert("Chào Mừng trở lại!, " + user);
   } else {
      user = prompt("Vui Lòng Nhập Tên Thật Của Bạn Trước Khi Vào Web :","");
      if (user != "" && user != null) {
-       setCookie("username-part", user, 40);
+       setupC("username-part", user, 40);
      }
   }
 
