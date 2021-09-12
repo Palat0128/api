@@ -94,7 +94,6 @@ function getCookie(cname) {
   return "";
 }
 
-function checkCookie() {
   let user = getCookie("username-part");
   if (user != "") {
     alert("Chào Mừng trở lại " + user);
@@ -104,5 +103,5 @@ function checkCookie() {
        setCookie("username-part", user, 40);
      }
   }
-}
+
 //Contact with Palat in Nguyenthanhhai12072008@gmail.com
