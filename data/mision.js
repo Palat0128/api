@@ -51,22 +51,7 @@ function showError(error) {
 }
 //Script thoại thời gian	
 }
-function Tacvu1() {
-  var time = new Date().getHours();
-  var person = prompt("Nhập Tên Trước Khi Vào");
-  if (person != null) {
-    document.getElementById("go").innerHTML =
-    "Chào " + person + "! Chúc bạn 1 ngày tốt";
-  }
-   if (time < 10) {
-    greeting = "Chào buổi sáng";
-  } else if (time < 18) {
-    greeting = "Chúc 1 ngày vui vẻ";
-  } else {
-    greeting ="Chào buổi tối";    
-  }
-  document.getElementById("timego").innerHTML = greeting;
-}
+
 function trinhduyet() {
   var v = "Phiên Bản Trình Duyệt: " + navigator.appVersion;
   var n = "Nền tản: " + navigator.platform;
@@ -80,7 +65,6 @@ function setupC(cname,cvalue,exdays) {
   var expires = "expires=" + d.toGMTString();
   document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
-
 function getnameC(cname) {
   var name = cname + "=";
   var decodedCookie = decodeURIComponent(document.cookie);
@@ -96,7 +80,6 @@ function getnameC(cname) {
   }
   return "";
 }
-
  var user = getnameC("username-part");
  if (user != "") {
     alert("Chào Mừng trở lại!, " + user);
@@ -106,5 +89,15 @@ function getnameC(cname) {
        setupC("username-part", user, 40);
      }
   }
-
+  var time = new Date().getHours();
+    document.getElementById("go").innerHTML =
+    "Chào " + user + "! Chúc bạn 1 ngày tốt"; 
+   if (time < 10) {
+    greeting = "Chào buổi sáng! " + user ;
+  } else if (time < 18) {
+    greeting = "Chúc 1 ngày vui vẻ " + user ;
+  } else {
+    greeting ="Chào buổi tối! " + user ;    
+  }
+  document.getElementById("timego").innerHTML = greeting;
 //Contact with Palat in Nguyenthanhhai12072008@gmail.com
