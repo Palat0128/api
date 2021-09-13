@@ -99,5 +99,5 @@ function getnameC(cname) {
   } else {
     greeting ="Chào buổi tối! " + user ;    
   }
-  document.getElementById("timego").innerHTML = greeting;
+
 //Contact with Palat in Nguyenthanhhai12072008@gmail.com
